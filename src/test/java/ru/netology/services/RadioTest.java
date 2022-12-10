@@ -154,6 +154,36 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
+    @Test
+    public void shouldVolumeUpOne() {
+        Radio radio = new Radio();
+        radio.setIncreaseVolume(0);
 
+        int expected = 0;
+        int actual = radio.getIncreaseVolume();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldVolumeDownOne() {
+        Radio radio = new Radio();
+        radio.setIncreaseVolume(1);
+
+        int expected = 0;
+        int actual = radio.getIncreaseVolume();
+
+        Assertions.assertEquals(expected, actual);
+    }
+    @Test
+    public void shouldVolumeUpOneTest() {
+        Radio radio = new Radio();
+        radio.setIncreaseVolume(10);
+
+        int expected = 0;
+        int actual = radio.getIncreaseVolume();
+
+        Assertions.assertEquals(expected, actual);
+    }
 
 }

@@ -7,9 +7,22 @@ public class Radio {
     private int currentStation;
     int maxVolume = 9;
     int minVolume = 0;
+    private int increaseVolume;
+
+
 
     public int getCurrentStation() {
+
         return currentStation;
+    }
+    public int getIncreaseVolume() {
+        return increaseVolume;
+    }
+
+    public void setIncreaseVolume(int increaseVolume) {
+        if (increaseVolume < 10) {
+            increaseVolume = increaseVolume + 1;
+        }
     }
 
     public void setCurrentStation(int currentStation) {
@@ -55,11 +68,5 @@ public class Radio {
             currentStation = 9;
         }
     }
-
-
-
-
-
-
 
 }
