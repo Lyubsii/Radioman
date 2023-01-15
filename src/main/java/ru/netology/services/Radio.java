@@ -20,7 +20,7 @@ public class Radio {
     }
 
     public void setStationsCount(int stationsCount) {
-        if (stationsCount < 0){
+        if (stationsCount < 0) {
             return;
         }
         if (stationsCount > maxStation) {
@@ -30,7 +30,7 @@ public class Radio {
     }
 
 
-    public void nextStationCount () {
+    public void nextStationCount() {
         if (stationsCount < maxStation) {
             stationsCount++;
         } else {
@@ -42,7 +42,7 @@ public class Radio {
         if (stationsCount > 0) {
             stationsCount--;
         } else {
-           stationsCount = maxStation;
+            stationsCount = maxStation;
         }
     }
 
@@ -88,7 +88,7 @@ public class Radio {
     }
 
     public void nextStation() {
-        if (currentStation < maxStation ) {
+        if (currentStation < maxStation) {
             currentStation++;
         } else {
             currentStation = 0;
@@ -102,8 +102,4 @@ public class Radio {
             currentStation = maxStation;
         }
     }
-
-
-
-
 }
