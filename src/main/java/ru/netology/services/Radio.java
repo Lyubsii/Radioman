@@ -15,6 +15,11 @@ public class Radio {
         maxStation = 9;
     }
 
+    public Radio(int stationsCount) {
+        maxStation = stationsCount - 1;
+
+    }
+
     public int getStationsCount() {
         return stationsCount;
     }

@@ -236,6 +236,18 @@ public class RadioTest {
     }
 
     @Test
+    public void stationsCountTest4() {
+        Radio radio = new Radio(-1);
+
+        radio.getStationsCount();
+
+        int expected = 0;
+        int actual = radio.getCurrentStation();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
     public void nextStationsCountTest() {
         Radio radio = new Radio();
 
@@ -335,6 +347,10 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
+
+
+
 
 
 
